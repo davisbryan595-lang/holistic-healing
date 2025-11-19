@@ -18,9 +18,9 @@ export default function Home() {
       <Services />
       <Pricing />
       <Gallery />
+      <Contact />
       <Reviews />
       <Booking />
-      <Contact />
       <Footer />
       
       {/* Floating Chat Button */}
