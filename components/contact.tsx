@@ -106,12 +106,11 @@ export function Contact() {
                 Latest Videos
               </h3>
             </div>
-            <div className="p-4 bg-[#FFF5EE]">
+            <div className="p-4 bg-[#FFF5EE] h-[450px]">
               <iframe
-                className="w-full rounded-lg"
-                height="400"
-                src="https://www.youtube.com/embed?listType=user_uploads&list=AROSEASCREATIONS420"
-                title="YouTube Video Embed"
+                className="w-full h-full rounded-lg"
+                src="https://www.youtube.com/@AROSEASCREATIONS420/videos"
+                title="YouTube Channel"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -128,13 +127,13 @@ export function Contact() {
                 Recent Posts
               </h3>
             </div>
-            <div className="p-4 bg-[#FFF5EE]">
+            <div className="p-4 bg-[#FFF5EE] h-[450px]">
               <div
-                className="fb-page rounded-lg overflow-hidden"
-                data-href="https://www.facebook.com/people/Aroseas-Creations-Holistic-Healing/100091079950390"
+                className="fb-page rounded-lg overflow-hidden h-full"
+                data-href="https://www.facebook.com/profile.php?id=100091079950390&sk=reels_tab"
                 data-tabs="timeline"
                 data-width="100%"
-                data-height="400"
+                data-height="450"
                 data-small-header="true"
                 data-adapt-container-width="true"
                 data-hide-cover="false"
