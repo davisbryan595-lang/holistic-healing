@@ -25,7 +25,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="font-heading text-6xl md:text-8xl lg:text-9xl text-[#FFD700] drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] mb-4"
         >
-          Arosea's Creations
+          arosea's Creations
         </motion.h1>
         
         <motion.h2
