@@ -1,7 +1,6 @@
 "use client"
 
-import { Mail, MapPin, Phone, Youtube } from 'lucide-react'
-import Link from "next/link"
+import { Youtube } from 'lucide-react'
 import { useEffect } from 'react'
 
 export function Contact() {
