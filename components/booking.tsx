@@ -8,8 +8,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { format } from "date-fns"
-import { CalendarIcon, Loader2 } from 'lucide-react'
+import { CalendarIcon, Loader2, Mail, MapPin, Phone, Youtube } from 'lucide-react'
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 export function Booking() {
   const [date, setDate] = useState<Date>()
@@ -46,7 +47,7 @@ export function Booking() {
 
   return (
     <section id="book" className="py-20 px-4 bg-[#FFF5EE]">
-      <div className="container mx-auto max-w-2xl">
+      <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="font-heading text-5xl md:text-6xl text-[#DDA0DD] mb-4">Ready to Bloom?</h2>
           <p className="font-serif text-gray-600">
@@ -54,7 +55,71 @@ export function Booking() {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-[#FFD700]/20 space-y-6">
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* Contact Info Card */}
+          <div className="bg-[#FFF5EE] p-8 rounded-2xl border border-[#DDA0DD]/20 shadow-lg h-fit">
+            <h3 className="font-heading text-3xl text-[#FFD700] mb-8">Contact Information</h3>
+
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <Mail className="text-[#DDA0DD] flex-shrink-0 mt-1" size={24} />
+                <div>
+                  <p className="font-serif font-bold text-gray-800">Email</p>
+                  <a href="mailto:contact@arosea.com" className="font-serif text-gray-600 hover:text-[#DDA0DD] transition-colors">
+                    contact@arosea.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <MapPin className="text-[#DDA0DD] flex-shrink-0 mt-1" size={24} />
+                <div>
+                  <p className="font-serif font-bold text-gray-800">Location</p>
+                  <p className="font-serif text-gray-600">Virtual & In-Person Services</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Phone className="text-[#DDA0DD] flex-shrink-0 mt-1" size={24} />
+                <div>
+                  <p className="font-serif font-bold text-gray-800">Availability</p>
+                  <p className="font-serif text-gray-600">Monday - Sunday by appointment</p>
+                </div>
+              </div>
+
+              <div className="pt-6 border-t border-[#DDA0DD]/20">
+                <p className="font-serif text-gray-600 mb-4">
+                  Connect with us on our social channels for daily inspiration and healing tips.
+                </p>
+                <div className="space-y-3">
+                  <Link
+                    href="https://www.youtube.com/@AROSEASCREATIONS420"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 bg-white rounded-lg border border-[#DDA0DD]/20 hover:border-[#DDA0DD] hover:shadow-md transition-all group"
+                  >
+                    <Youtube className="text-[#FF0000] flex-shrink-0 group-hover:scale-110 transition-transform" size={20} />
+                    <span className="font-serif text-sm text-gray-800">YouTube</span>
+                  </Link>
+
+                  <Link
+                    href="https://www.facebook.com/people/Aroseas-Creations-Holistic-Healing/100091079950390/?sk=reels_tab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 bg-white rounded-lg border border-[#DDA0DD]/20 hover:border-[#DDA0DD] hover:shadow-md transition-all group"
+                  >
+                    <svg className="text-[#1877F2] flex-shrink-0 group-hover:scale-110 transition-transform" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span className="font-serif text-sm text-gray-800">Facebook</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Form */}
+          <form onSubmit={handleSubmit} className="lg:col-span-2 bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-[#FFD700]/20 space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-serif text-gray-600">Name</label>
@@ -131,7 +196,8 @@ export function Booking() {
               "Begin Journey"
             )}
           </Button>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   )
