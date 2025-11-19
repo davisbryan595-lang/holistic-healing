@@ -65,12 +65,11 @@ export function Contact() {
               </h3>
             </div>
             <div className="p-4 bg-[#FFF5EE]">
-              <iframe
-                className="w-full rounded-lg aspect-video"
-                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1Bs4XFkPNg%2F&show_text=false&width=500&appId=1234567890"
-                title="Facebook Video"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                allowFullScreen
+              <div
+                className="fb-video rounded-lg overflow-hidden"
+                data-href="https://www.facebook.com/share/v/1Bs4XFkPNg/"
+                data-width="100%"
+                data-show-text="false"
               />
             </div>
           </div>
