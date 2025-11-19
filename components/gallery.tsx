@@ -11,6 +11,9 @@ const galleryItems = [
   { id: 4, category: "Creations", src: "/amethyst-dreamcatcher-handmade.jpg", title: "Amethyst Dreamcatcher" },
   { id: 5, category: "Client Stories", src: "/happy-woman-holding-crystals.jpg", title: "Client Joy" },
   { id: 6, category: "Creations", src: "/sage-smudge-stick-bundle.jpg", title: "Sage Bundles" },
+  { id: 7, category: "Creations", src: "https://cdn.builder.io/api/v1/image/assets%2F98a3bf12d3fd43d6afbc24b607fa1ca0%2Fe09dddf8d29249c2a2a80e7a0a453dd7?format=webp&width=800", title: "Spiritual Symbols" },
+  { id: 8, category: "Creations", src: "https://cdn.builder.io/api/v1/image/assets%2F98a3bf12d3fd43d6afbc24b607fa1ca0%2F0a36c8a339554d90be5452a6cf2ab7e1?format=webp&width=800", title: "Handmade Jewelry & Decor" },
+  { id: 9, category: "Healing", src: "https://cdn.builder.io/api/v1/image/assets%2F98a3bf12d3fd43d6afbc24b607fa1ca0%2F9edf27130db34189ba700f6a46efe607?format=webp&width=800", title: "Herbal Infusion" },
 ]
 
 const categories = ["All", "Healing", "Creations", "Client Stories"]
