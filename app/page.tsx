@@ -6,6 +6,7 @@ import { Pricing } from "@/components/pricing"
 import { Gallery } from "@/components/gallery"
 import { Reviews } from "@/components/reviews"
 import { Booking } from "@/components/booking"
+import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Pricing />
       <Gallery />
+      <Contact />
       <Reviews />
       <Booking />
       <Footer />
