@@ -55,7 +55,7 @@ export function Contact() {
           </div>
 
           {/* Facebook Preview */}
-          <div className="bg-white rounded-2xl border border-[#DDA0DD]/20 shadow-lg overflow-hidden">
+          <div className="bg-white rounded-2xl border border-[#DDA0DD]/20 shadow-lg overflow-hidden flex flex-col">
             <div className="bg-gradient-to-r from-[#1877F2] to-[#0A66C2] p-4">
               <h3 className="font-heading text-xl text-white flex items-center gap-2">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -64,13 +64,23 @@ export function Contact() {
                 Featured Video
               </h3>
             </div>
-            <div className="p-4 bg-[#FFF5EE]">
-              <div
-                className="fb-video rounded-lg overflow-hidden"
-                data-href="https://www.facebook.com/share/v/1Bs4XFkPNg/"
-                data-width="100%"
-                data-show-text="false"
-              />
+            <div className="p-8 bg-[#FFF5EE] flex-1 flex items-center justify-center">
+              <a
+                href="https://www.facebook.com/share/v/1Bs4XFkPNg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-4 text-center hover:opacity-80 transition-opacity"
+              >
+                <div className="w-20 h-20 bg-gradient-to-r from-[#1877F2] to-[#0A66C2] rounded-full flex items-center justify-center">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5 3 19 12 5 21 5 3"/>
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-heading text-lg text-[#DDA0DD] mb-1">Watch on Facebook</p>
+                  <p className="font-serif text-sm text-gray-600">Click to view the full video</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
