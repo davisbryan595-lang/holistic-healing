@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, MapPin } from 'lucide-react'
+import { Facebook, Instagram, Mail, MapPin, Youtube } from 'lucide-react'
 import Link from "next/link"
 
 export function Footer() {
@@ -20,14 +20,22 @@ export function Footer() {
               >
                 <Facebook size={20} />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="https://www.youtube.com/@AROSEASCREATIONS420"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/20 p-2 rounded-full hover:bg-[#FFD700] hover:text-[#DDA0DD] transition-colors"
+              >
+                <Youtube size={20} />
+              </a>
+              <a
+                href="#"
                 className="bg-white/20 p-2 rounded-full hover:bg-[#FFD700] hover:text-[#DDA0DD] transition-colors"
               >
                 <Instagram size={20} />
               </a>
-              <a 
-                href="mailto:contact@arosea.com" 
+              <a
+                href="mailto:contact@arosea.com"
                 className="bg-white/20 p-2 rounded-full hover:bg-[#FFD700] hover:text-[#DDA0DD] transition-colors"
               >
                 <Mail size={20} />

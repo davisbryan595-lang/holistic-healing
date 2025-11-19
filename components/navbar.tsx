@@ -30,16 +30,13 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="#home" className="flex items-center gap-2 group">
-          <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-[#FFD700] group-hover:shadow-[0_0_15px_rgba(255,215,0,0.5)] transition-shadow">
-             <img 
-               src="/mystical-logo-purple-flower.jpg" 
-               alt="Arosea Logo" 
+          <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-[#FFD700] group-hover:shadow-[0_0_15px_rgba(255,215,0,0.5)] transition-shadow">
+             <img
+               src="/mystical-logo-purple-flower.jpg"
+               alt="Arosea Logo"
                className="object-cover w-full h-full"
              />
           </div>
-          <span className={`font-heading text-2xl md:text-3xl ${isScrolled ? "text-[#DDA0DD]" : "text-[#DDA0DD] md:text-white md:drop-shadow-md"}`}>
-            arosea's Creations & Holistic Healing
-          </span>
         </Link>
 
         {/* Desktop Nav */}
