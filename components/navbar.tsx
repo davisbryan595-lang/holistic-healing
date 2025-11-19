@@ -38,7 +38,7 @@ export function Navbar() {
              />
           </div>
           <span className={`font-heading text-2xl md:text-3xl ${isScrolled ? "text-[#DDA0DD]" : "text-[#DDA0DD] md:text-white md:drop-shadow-md"}`}>
-            arosea's Creations
+            arosea's Creations & Holistic Healing
           </span>
         </Link>
 
